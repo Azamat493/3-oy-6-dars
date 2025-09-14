@@ -1,0 +1,75 @@
+1. break operatori siklni (loop) yoki switch-case blokini to‘liq to‘xtatadi
+ va sikldan chiqadi.
+
+
+2. continue operatori siklning joriy iteratsiyasini tashlab yuboradi 
+va keyingi iteratsiyaga o‘tadi.
+
+
+3. switch operatori biror o‘zgaruvchi yoki ifodaning qiymatini tekshiradi va turli 
+holatlarga (case) qarab mos blokni bajaradi.
+
+
+4. case – bu switch ichidagi alohida holat.
+Agar expression === case value bo‘lsa, shu block ishlaydi.
+break ishlatilmasa, keyingi case ham bajariladi (fall-through).
+
+
+5. default – bu hech bir case mos kelmasa bajariladigan kod.
+break talab qilinmaydi, chunki default oxirida bo‘ladi.
+
+
+======String Methodlari========
+
+1. length - String uzunligini beradi (belgilar soni).
+
+
+2. toUpperCase() / toLowerCase() - Kattalashtirish / kichiklashtirish.
+
+
+3. charAt(index) - Berilgan indeksdagi belgini qaytaradi.
+
+
+4. indexOf(substring) / lastIndexOf(substring) - Substringning indeksini 
+topadi. Agar topilmasa -1 qaytaradi.
+
+
+5. includes(substring) - Substring bor-yo‘qligini tekshiradi (true/false).
+
+
+6. startsWith(substring) / endsWith(substring) - String boshlanishi yoki 
+tugashini tekshiradi (true/false).
+
+
+7. slice(start, end) - Berilgan indeks oralig‘idagi qismini oladi 
+(end indeksi kirmaydi).
+
+
+8. substring(start, end) - slicega o‘xshash, lekin manfiy indeksni qabul qilmaydi.
+
+
+9. split(separator) - Stringni massivga bo‘ladi.
+
+
+10. trim() / trimStart() / trimEnd() - Boshlang‘ich va oxiridagi 
+bo‘sh joylarni olib tashlaydi.
+
+
+11. replace(search, replace) - Substringni almashtiradi (faqat birinchi 
+uchraydiganini).
+
+
+12. repeat(n) - Stringni n marta takrorlaydi.
+
+
+13. concat() - Stringlarni birlashtiradi.
+
+
+14. padStart(targetLength, padString) / padEnd(targetLength, padString) - 
+Stringni kerakli uzunlikka yetkazadi, boshlanishiga yoki oxiriga belgilar qo‘shadi.
+
+
+15. match() - Regex bilan mos keladigan qismlarni topadi.
+
+
+16. charCodeAt(index) - Belgining Unicode kodini beradi.
