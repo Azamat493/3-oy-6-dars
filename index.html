@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,29 +21,106 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="">
-    <header class="header ">
-      <div
-        class="container1 header-inner backdrop-blur-[10px] border-0 border-solid border-black bg-[rgba(37, 73, 31, 0.31)] w-[1440px] h-12"
+  <body>
+    <section
+      class="banner relative container1 bg-[url('/images/glavnaya.svg')] border w-[1440px] h-[746px] border-solid border-black bg-no-repeat bg-center bg-cover"
+    >
+      <header
+        class="header sticky top-0 z-[999] p-[10px] w-full backdrop-blur-[10px] border-0 border-solid border-black bg-[rgba(37, 73, 31, 0.31)] relative"
       >
-        <nav class="nav">
-          <a href="#">О компании</a>
-          <a href="#">Проекты</a>
-          <a href="#">Уход за садом</a>
-          <a href="#">Ландшафт</a>
-          <a href="#">Отзывы</a>
-        </nav>
-        <div class="contacts">
-          <div>
-            <i class="fa-solid fa-phone"></i>
-            <p>тел.+7 (981) 98-50-04</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Санкт-Петербург и ЛО</p>
+        <div class="header-inner flex items-center justify-around">
+          <nav class="nav flex items-center gap-[30px]">
+            <a
+              href="#"
+              class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
+              >О компании</a
+            >
+            <a
+              href="#"
+              class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
+              >Проекты</a
+            >
+            <a
+              href="#"
+              class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
+              >Уход за садом</a
+            >
+            <a
+              href="#"
+              class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
+              >Ландшафт</a
+            >
+            <a
+              href="#"
+              class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
+              >Отзывы</a
+            >
+          </nav>
+          <div
+            class="contacts flex flex-col gap-[8px] font-light text-sm leading-[113%] tracking-[0.03em] text-[#ffdf9e] font-roboto"
+          >
+            <div
+              class="flex items-center gap-[8px] hover:text-white transition duration-300"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">тел.+7 (981) 98-50-04</a>
+            </div>
+            <div
+              class="flex items-center gap-[8px] hover:text-white transition duration-300"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="#">Санкт-Петербург и ЛО</a>
+            </div>
           </div>
         </div>
+      </header>
+
+      <div class="banner-content absolute top-[12%] left-[12%]">
+        <img src="./images/ЛОГОТИП главная.svg" alt="" />
+        <h1
+          class="font-light text-[36px] leading-[116%] tracking-[0.03em] [font-variant:small-caps] text-white font-merriweather"
+        >
+          Благоустройство<br />
+          и озеленение участков
+        </h1>
+        <button
+          class="btn mt-[30px] cursor-pointer w-[339px] h-[60px] rounded-[5px] border-2 border-solid border-[#ff7e35] shadow-[0_4px_20px_0_rgba(0,0,0,0.25),inset_9px_9px_10px_0_rgba(0,0,0,0.25)] bg-[rgba(255,126,53,0.53)] transition duration-300 hover:bg-[#ff7e35] hover:shadow-[0_6px_25px_0_rgba(0,0,0,0.35),inset_4px_4px_6px_0_rgba(0,0,0,0.2)]"
+        >
+          Оставить заявку
+        </button>
       </div>
-    </header>
+      <div
+        class="right absolute top-[40%] right-[20%] flex flex-col gap-[25px]"
+      >
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="./images/Mask Group.svg"
+            alt=""
+            class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+        /></a>
+        <a
+          href="https://www.whatsapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./images/Mask Group (1).svg"
+            alt=""
+            class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+        /></a>
+        <a
+          href="https://mail.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="./images/Mask Group (2).svg"
+            alt=""
+            class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+        /></a>
+      </div>
+    </section>
   </body>
 </html>
