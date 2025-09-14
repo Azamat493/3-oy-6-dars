@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --second-merriweather: "Merriweather", sans-serif;
+}
+
+.container1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
