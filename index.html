@@ -23,13 +23,30 @@
   </head>
   <body>
     <section
-      class="banner relative container1 bg-[url('/images/glavnaya.svg')] border w-[1440px] h-[746px] border-solid border-black bg-no-repeat bg-center bg-cover"
+      class="banner relative container1 bg-[url('/images/glavnaya.svg')] border w-[1440px] h-[600px] border-solid border-black bg-no-repeat bg-center bg-cover"
     >
       <header
-        class="header sticky top-0 z-[999] p-[10px] w-full backdrop-blur-[10px] border-0 border-solid border-black bg-[rgba(37, 73, 31, 0.31)] relative"
+        class="header sticky top-0 z-[999] p-[10px] w-full backdrop-blur-[10px] border-0 border-solid border-black bg-[rgba(37,73,31,0.31)] relative"
       >
-        <div class="header-inner flex items-center justify-around">
-          <nav class="nav flex items-center gap-[30px]">
+        <div
+          class="header-inner flex items-center justify-between md:justify-around"
+        >
+          <input type="checkbox" id="burger-toggle" class="hidden peer" />
+          <label
+            for="burger-toggle"
+            class="block md:hidden text-white text-2xl cursor-pointer z-[1000] peer-checked:hidden"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <nav
+            class="nav hidden peer-checked:flex md:flex flex-col md:flex-row items-right gap-[20px] md:gap-[30px] absolute md:static top-[100%] left-0 w-1/2 md:w-auto md:h-auto bg-[rgba(37,73,31,0.95)] md:bg-transparent p-5 md:p-0"
+          >
+            <label
+              for="burger-toggle"
+              class="absolute top-5 right-5 text-white text-2xl cursor-pointer md:hidden"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </label>
             <a
               href="#"
               class="font-light text-sm text-white font-roboto transition duration-300 hover:text-[#ffdf9e]"
@@ -74,33 +91,77 @@
           </div>
         </div>
       </header>
-
-      <div class="banner-content absolute top-[12%] left-[12%]">
-        <img src="./images/ЛОГОТИП главная.svg" alt="" />
+      <div
+        class="banner-content absolute top-[12%] left-[12%] max-w-[90%] md:max-w-[600px] text-left md:text-left text-center px-5 md:px-0"
+      >
+        <img
+          src="./images/ЛОГОТИП главная.svg"
+          alt=""
+          class="mx-auto md:mx-0"
+        />
         <h1
-          class="font-light text-[36px] leading-[116%] tracking-[0.03em] [font-variant:small-caps] text-white font-merriweather"
+          class="font-light text-[28px] md:text-[36px] leading-[116%] tracking-[0.03em] [font-variant:small-caps] text-white font-merriweather"
         >
           Благоустройство<br />
           и озеленение участков
         </h1>
         <button
-          class="btn mt-[30px] cursor-pointer w-[339px] h-[60px] rounded-[5px] border-2 border-solid border-[#ff7e35] shadow-[0_4px_20px_0_rgba(0,0,0,0.25),inset_9px_9px_10px_0_rgba(0,0,0,0.25)] bg-[rgba(255,126,53,0.53)] transition duration-300 hover:bg-[#ff7e35] hover:shadow-[0_6px_25px_0_rgba(0,0,0,0.35),inset_4px_4px_6px_0_rgba(0,0,0,0.2)]"
+          class="btn mt-[20px] md:mt-[30px] mx-auto md:mx-0 cursor-pointer w-[250px] md:w-[339px] h-[55px] md:h-[60px] rounded-[5px] border-2 border-solid border-[#ff7e35] shadow-[0_4px_20px_0_rgba(0,0,0,0.25),inset_9px_9px_10px_0_rgba(0,0,0,0.25)] bg-[rgba(255,126,53,0.53)] transition duration-300 hover:bg-[#ff7e35] hover:shadow-[0_6px_25px_0_rgba(0,0,0,0.35),inset_4px_4px_6px_0_rgba(0,0,0,0.2)]"
         >
           Оставить заявку
         </button>
+        <div
+          class="right-mobile flex flex-row justify-center gap-6 mt-6 md:hidden"
+        >
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/Mask Group.svg"
+              alt=""
+              class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.whatsapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/Mask Group (1).svg"
+              alt=""
+              class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://mail.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/Mask Group (2).svg"
+              alt=""
+              class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
+            />
+          </a>
+        </div>
       </div>
       <div
-        class="right absolute top-[40%] right-[20%] flex flex-col gap-[25px]"
+        class="right hidden md:flex flex-col gap-[25px] absolute top-[40%] right-[20%]"
       >
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img
+        >
+          <img
             src="./images/Mask Group.svg"
             alt=""
             class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
-        /></a>
+          />
+        </a>
         <a
           href="https://www.whatsapp.com/"
           target="_blank"
@@ -110,17 +171,136 @@
             src="./images/Mask Group (1).svg"
             alt=""
             class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
-        /></a>
+          />
+        </a>
         <a
           href="https://mail.google.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img
+        >
+          <img
             src="./images/Mask Group (2).svg"
             alt=""
             class="transition duration-300 hover:scale-110 hover:opacity-80 cursor-pointer"
-        /></a>
+          />
+        </a>
       </div>
     </section>
+
+    <main>
+      <section class="benefits py-10">
+        <div class="container2 px-4 sm:px-6 lg:px-0">
+          <div
+            class="benefit flex flex-col sm:flex-row items-center justify-around bg-[rgba(33,26,21,0.87)] w-full max-w-[1060px] mx-auto h-auto sm:h-[122px] rounded-[5px] font-light text-sm text-[#ffdf9e] font-roboto gap-4 sm:gap-0 py-6 sm:py-0"
+          >
+            <div class="flex flex-col items-center justify-center gap-2">
+              <img
+                src="./images/Mask Group (3).svg"
+                alt=""
+                class="h-[50px] sm:h-[50px]"
+              />
+              <p class="text-center">Опыт работы более 10 лет</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-2">
+              <img
+                src="./images/Mask Group (4).svg"
+                alt=""
+                class="h-[50px] sm:h-[50px]"
+              />
+              <p class="text-center">Гарантия на растения</p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-2">
+              <img
+                src="./images/Mask Group (5).svg"
+                alt=""
+                class="h-[50px] sm:h-[50px]"
+              />
+              <p class="text-center">Лучшие питомники</p>
+            </div>
+          </div>
+          <div class="mt-[40px] mb-[40px] flex items-center justify-center">
+            <img src="./images/Group 5.svg" alt="" class="w-full sm:w-auto" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about bg-[url('/images/verhushka.svg')] bg-no-repeat py-10"
+      >
+        <div class="container2 px-4 sm:px-6 lg:px-0">
+          <div
+            class="bg-[rgba(33,26,21,0.87)] p-4 sm:p-[30px] rounded-[5px] w-full max-w-[1060px] mx-auto h-auto sm:h-auto max-h-[300px] sm:max-h-none overflow-y-auto"
+          >
+            <h2
+              class="mb-[10px] font-normal text-base sm:text-lg text-[#ffdf9e] font-merriweather"
+            >
+              О компании
+            </h2>
+            <p
+              class="font-light text-sm sm:text-sm leading-[1.4] tracking-widest text-justify text-[#ffdf9e] font-roboto"
+            >
+              <span class="font-normal">Relief Image</span> - компания по уходу
+              за садом и ландшафтом. Более 10 лет мы занимаемся благоустройством
+              загородных участков, также имеем порядка 60 готовых работ в
+              Ленинградской области и Санкт-Петербурге. К нам обращаются и
+              доверяют уже более 20 постоянных клиентов за помощью по
+              благоустройству и уходу участков. Наша компания отличается
+              КАЧЕСТВОМ выполненных работ, ГАРАНТИЕЙ на растения, ЛУЧШИМИ
+              питомниками для вашего участка и разработкой проекта ПОД КЛЮЧ.
+              Обратившись к нашим специалистам, вы всегда будете чувствовать,
+              как мы с большим вниманием относимся к вашим предпочтениям. Одной
+              из ключевых задач нашей компании является то, что бы клиент всегда
+              оставался доволен и наслаждался выполненной работой. Если вас
+              интересовали именно эти критерии при подборе специалистов, то вы
+              попали в нужные руки!
+            </p>
+          </div>
+        </div>
+        <div class="container2 px-4 sm:px-6 lg:px-0 mt-10">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center mt-5 gap-1 sm:gap-2"
+          >
+            <h2 class="font-normal text-lg text-[#34642c] font-roboto m-0">
+              НАШИ ПРОЕКТЫ
+            </h2>
+            <img
+              src="./images/Надпись Игора.svg"
+              alt=""
+              class="h-[20px] sm:h-[32px]"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-5">
+            <div
+              class="row-span-2 transition-transform duration-300 ease-in-out hover:scale-102 relative h-[300px] sm:h-[607px] bg-[url('/images/Rectangle51.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div
+                class="flex items-center justify-center w-[90%] h-[63px] bg-[rgba(255,239,227,0.58)] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+              >
+                <p class="text-center text-sm sm:text-base">Правдинское</p>
+              </div>
+            </div>
+            <div
+              class="relative transition-transform duration-300 ease-in-out hover:scale-102 h-[180px] sm:h-[259px] bg-[url('/images/Rectangle53.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div
+                class="flex items-center justify-center w-[90%] h-[55px] bg-[rgba(255,239,227,0.58)] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+              >
+                <p class="text-center text-sm sm:text-base">Репино</p>
+              </div>
+            </div>
+            <div
+              class="relative transition-transform duration-300 ease-in-out hover:scale-102 h-[220px] sm:h-[331px] bg-[url('/images/Rectangle54.svg')] bg-no-repeat bg-center bg-cover"
+            >
+              <div
+                class="flex items-center justify-center w-[90%] h-[55px] bg-[rgba(255,239,227,0.58)] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+              >
+                <p class="text-center text-sm sm:text-base">Петергоф</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
